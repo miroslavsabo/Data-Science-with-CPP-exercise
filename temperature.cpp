@@ -5,16 +5,33 @@
 #include <string>
 #include <algorithm>
 #include <unordered_map>
+#include "boost/format.hpp"
 
-void TemperatureData::print()
+void Data::print()
 {
     std::cout << "Temperature data object of " << records.size() << " records." << std::endl;
+}
+
+void TemperatureData::save(std::string filename, std::string sep)
+{
+    std::ofstream myfile;
+    myfile.open (filename);
+    for(auto value : records)
+    {
+        myfile << value.station << sep << value.temperature << std::endl;
+    }
+    myfile.close();
+
+
 }
 
 void TemperatureData::read()
 {
     std::string line;
     std::ifstream ifs(filename);
+
+    int good = 0;
+    int bad = 0;
 
     // The function std::getline, like most iostreams operations, returns a reference to the stream object itself, which can be evaluated in a boolean context to tell you whether it is still good, i.e. whether the extraction operation succeeded.
     while(std::getline(ifs, line))
@@ -33,16 +50,21 @@ void TemperatureData::read()
             std::cout << station << "\t" << temperature << std::endl;
 
             records.push_back({station, temperature});
+
+            good++;
         }
 
         else
         {
             std::cout << "\tWrong line found: " << line << std::endl ;
+            bad++;
         }
 
 
 
     }
+
+    std::cout << boost::format("Read: %-10s  Skipped: %10.2f") % good % bad << std::endl;
 
 }
 

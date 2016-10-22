@@ -8,7 +8,8 @@ int main ()
     t.read();
     t.print();
 
-    avg_by_key(t.to_map());
+    summarise_by_key(t.to_map(), avg);
 
+    t.save("results/stations-clean.csv");
     return 0;
 }

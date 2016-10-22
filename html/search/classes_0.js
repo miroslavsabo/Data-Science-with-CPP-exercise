@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['record',['Record',['../structRecord.html',1,'']]]
+  ['data',['Data',['../classData.html',1,'']]]
 ];

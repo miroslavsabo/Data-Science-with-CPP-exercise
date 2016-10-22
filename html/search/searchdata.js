@@ -1,7 +1,7 @@
 var indexSectionsWithContent =
 {
-  0: "prt",
-  1: "rt",
+  0: "dprt",
+  1: "drt",
   2: "p"
 };
 

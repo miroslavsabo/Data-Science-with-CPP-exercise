@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>My Project: Record Struct Reference</title>
+<title>My Project: Data Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,24 +83,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structRecord-members.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classData-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Record Struct Reference</div>  </div>
+<div class="title">Data Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Data:</div>
+<div class="dyncontent">
+<div class="center"><img src="classData__inherit__graph.png" border="0" usemap="#Data_inherit__map" alt="Inheritance graph"/></div>
+<map name="Data_inherit__map" id="Data_inherit__map">
+<area shape="rect" id="node2" href="classTemperatureData.html" title="TemperatureData" alt="" coords="5,80,128,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a594772e9772b63fa5897512bc618bf58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a594772e9772b63fa5897512bc618bf58"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>station</b></td></tr>
-<tr class="separator:a594772e9772b63fa5897512bc618bf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04ffa52863d86812a456d566b10266e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04ffa52863d86812a456d566b10266e1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>temperature</b></td></tr>
-<tr class="separator:a04ffa52863d86812a456d566b10266e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aaf6b0da495803c494a6c6a9f89021403"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf6b0da495803c494a6c6a9f89021403"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Data</b> (std::string f)</td></tr>
+<tr class="separator:aaf6b0da495803c494a6c6a9f89021403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779ce878d01483220b49ad9e513d7366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a779ce878d01483220b49ad9e513d7366"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
+<tr class="separator:a779ce878d01483220b49ad9e513d7366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a784e96cd5e92785a0c4f2824284c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16a784e96cd5e92785a0c4f2824284c7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> ()=0</td></tr>
+<tr class="separator:a16a784e96cd5e92785a0c4f2824284c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e10a8a62cb83a4299c9bff0ef71bdf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e10a8a62cb83a4299c9bff0ef71bdf9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::string filename, std::string sep=&quot;;&quot;)=0</td></tr>
+<tr class="separator:a2e10a8a62cb83a4299c9bff0ef71bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a2cbdf542620c5f62b3e504ea2cecffd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cbdf542620c5f62b3e504ea2cecffd0"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b></td></tr>
+<tr class="separator:a2cbdf542620c5f62b3e504ea2cecffd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab886b83cfa461cc7def5c0e8ba870d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab886b83cfa461cc7def5c0e8ba870d7c"></a>
+std::vector&lt; <a class="el" href="structRecord.html">Record</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>records</b></td></tr>
+<tr class="separator:ab886b83cfa461cc7def5c0e8ba870d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="temperature_8h_source.html">temperature.h</a></li>
+<li>temperature.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

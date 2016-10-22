@@ -3,7 +3,7 @@ Simple data science exercise demonstrating the use of these features:
 
 * reading, writing, and parsing data
 * header+source files
-* OOP
+* OOP: inheritance
 * pointers, references
 * STL, Boost
 * passing by reference/by value
