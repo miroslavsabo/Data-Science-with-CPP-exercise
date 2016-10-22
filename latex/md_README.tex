@@ -1,0 +1,56 @@
+Simple data science exercise demonstrating the use of these features\+:
+
+
+\begin{DoxyItemize}
+\item reading, writing, and parsing data
+\item header+source files
+\item O\+OP
+\item pointers, references
+\item S\+TL, Boost
+\item passing by reference/by value
+\item dynamic memory allocation
+\item C++11, C++14
+\item templates
+\item python like string formatting
+\item documentation
+\item testing
+\end{DoxyItemize}
+
+\# Setup 
+\begin{DoxyCode}
+1 # setup C++
+2 sudo apt-get install g++
+3 
+4 # install boost
+5 sudo apt-get install libboost-all-dev
+6 
+7 # install doxygen
+8 sudo apt-get install doxygen
+9 sudo apt-get install graphviz
+10 
+11 # generate a project-specific doxygen configuration file
+12 doxygen -g parsing-exercise.conf
+13 
+14 # install astyle c++ prettyfier
+15 download https://sourceforge.net/projects/astyle/files/latest/download?source=files
+16 cd astyle/build/gcc
+17 make
+18 
+19 # make run.sh executable
+20 chmod +x run.sh
+21 
+22 # run
+23 ./run.sh
+\end{DoxyCode}
+
+
+\section*{T\+O\+DO}
+
+
+\begin{DoxyItemize}
+\item better naming
+\item better optimization
+\item add tests
+\item more comments
+\item use typedefs 
+\end{DoxyItemize}
