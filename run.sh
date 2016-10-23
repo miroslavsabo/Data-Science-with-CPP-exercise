@@ -9,15 +9,15 @@ set -e
 g++ -std=c++14 main.cpp  temperature.cpp utils.cpp -o parser
 
 # test
-#cmake CMakeLists.txt
-#make
-#./runTests
+cmake CMakeLists.txt
+make
+./runTests
 
 # document
-#doxygen parsing-exercise.conf
+doxygen parsing-exercise.conf
 
 # execute
 ./parser
 
 # recommend
-#cppclean .
+cppclean .

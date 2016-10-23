@@ -8,11 +8,6 @@
 int main (int argc, char *argv[])
 {
 
-
-
-
-
-
     //TemperatureData t ("data/stations.csv");
     TemperatureData t ("data/stations.csv");
 
@@ -26,8 +21,6 @@ int main (int argc, char *argv[])
 
 //save clean data to disk
     t.save("results/stations-clean.csv");
-
-
 
     return 0;
 }

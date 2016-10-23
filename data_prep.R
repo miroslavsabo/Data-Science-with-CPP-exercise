@@ -11,7 +11,7 @@ station <- c("aaaaaaa", "b", "c") %>% sample(n, replace = TRUE)
 
 c("efef", "", "er;;;;") %>% 
   c(paste(station, temperature, sep = ";")) %>% 
-  c("efrfr;fr;rfrgfr;gr", "", "a") %>% 
+  c("efrfr;fr;rfrgfr;gr", "", "a", "-0.1;a") %>% 
   writeLines("data/stations.csv")
 
 

@@ -38,11 +38,11 @@ void TemperatureData::read()
         // size_t is an unsigned type. So, it cannot represent any negative values(<0). You use it when you are counting something, and are sure that it cannot be negative.  For example, strlen() returns a size_t because the length of a string has to be at least 0.
         size_t n_seps = std::count(line.begin(), line.end(), ';');
 
-        if (n_seps == 1)
-        {
-            std::vector<std::string> fields;
-            boost::split(fields, line, boost::is_any_of(";"));
+        std::vector<std::string> fields;
+        boost::split(fields, line, boost::is_any_of(";"));
 
+        if (n_seps == 1 && is_number(fields.at(1)))
+        {
             std::string station = fields.at(0);
             double temperature = std::stod(fields.at(1));
 

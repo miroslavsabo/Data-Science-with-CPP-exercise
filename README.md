@@ -4,6 +4,7 @@ Simple data science exercise demonstrating the use of these features:
 * reading, writing, and parsing data
 * header+source files
 * OOP: inheritance, virtual methods
+* data structures: struct, class, unordered map, vector
 * pointers, references
 * STL, Boost
 * passing by reference/by value
@@ -18,6 +19,11 @@ Simple data science exercise demonstrating the use of these features:
 * make
 * include guards (via #pragma once)
 * macros
+* namespaces
+* exceptions
+* regex
+* plotting
+* external library
 
 # Setup
 ```
@@ -66,4 +72,5 @@ chmod +x run.sh
 * use typedefs
 * use initializers whenever you can
 * better project structure
-* check that station is string and temperature is number
+* make plot
+* add external library

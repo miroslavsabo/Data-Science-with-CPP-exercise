@@ -10,6 +10,7 @@
 
 double avg(const std::vector<double> &v);
 
+bool is_number(const std::string & s);
 
 /** brief
  *
