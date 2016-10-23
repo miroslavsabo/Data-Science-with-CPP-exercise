@@ -8,6 +8,7 @@
 #include <boost/format.hpp>
 #include <typeinfo>
 #include "utils.h"
+#include <chrono>
 
 Data::Data(std::string f) : filename(f) { }
 
@@ -33,6 +34,8 @@ void TemperatureData::read()
 
     int good = 0;
     int bad = 0;
+
+    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
     // The function std::getline, like most iostreams operations, returns a reference to the stream object itself, which can be evaluated in a boolean context to tell you whether it is still good, i.e. whether the extraction operation succeeded.
     while(std::getline(ifs, line))
@@ -66,7 +69,9 @@ void TemperatureData::read()
 
     }
 
-    std::cout << boost::format("Read: %s lines  Skipped: %s lines") % good % bad << std::endl;
+std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+double duration = std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count();
+    std::cout << boost::format("Read: %s lines  Skipped: %s lines In: %f seconds") % good % bad % duration << std::endl;
 
 }
 
