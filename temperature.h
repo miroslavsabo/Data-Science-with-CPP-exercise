@@ -24,6 +24,8 @@ public:
     virtual void read() = 0;
     //records_by_station to_map();
     virtual void save(std::string filename, std::string sep = ";") = 0;
+
+    virtual ~Data() {};
 };
 
 class TemperatureData : public Data
@@ -32,8 +34,11 @@ class TemperatureData : public Data
 public:
     //TemperatureData(std::string f) : Data(f) { };
     using Data::Data;
+
     //void print();
     void read();
     records_by_station to_map();
     void save(std::string filename, std::string sep = ";");
+
+    ~TemperatureData() {};
 };

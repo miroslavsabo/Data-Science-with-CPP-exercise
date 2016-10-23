@@ -73,3 +73,7 @@ vignettes/*.pdf
 *.exe
 *.out
 *.app
+
+#
+CMakeFiles/
+*.cmake

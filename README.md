@@ -3,16 +3,18 @@ Simple data science exercise demonstrating the use of these features:
 
 * reading, writing, and parsing data
 * header+source files
-* OOP: inheritance
+* OOP: inheritance, virtual methods
 * pointers, references
 * STL, Boost
 * passing by reference/by value
 * dynamic memory allocation
-* C++11, C++14
+* C++11, C++14 features
 * templates
 * python like string formatting
 * documentation
 * testing
+* CLI arguments
+* make
 
 # Setup
 ```
@@ -34,6 +36,18 @@ download https://sourceforge.net/projects/astyle/files/latest/download?source=fi
 cd astyle/build/gcc
 make
 
+# install code correctness recommender
+sudo pip install --upgrade cppclean
+
+# install google test
+sudo apt-get install libgtest-dev
+sudo apt-get install cmake # install cmake
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+# copy or symlink libgtest.a and libgtest_main.a to your /usr/lib folder
+sudo cp *.a /usr/lib
+
 # make run.sh executable
 chmod +x run.sh
 
@@ -47,3 +61,4 @@ chmod +x run.sh
 * add tests
 * more comments
 * use typedefs
+* use initializers whenever you can

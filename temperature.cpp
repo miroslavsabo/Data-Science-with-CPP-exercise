@@ -16,10 +16,7 @@ void TemperatureData::save(std::string filename, std::string sep)
 {
     std::ofstream myfile;
     myfile.open (filename);
-    for(auto value : records)
-    {
-        myfile << value.station << sep << value.temperature << std::endl;
-    }
+    for(auto value : records) myfile << value.station << sep << value.temperature << std::endl;
     myfile.close();
 
 

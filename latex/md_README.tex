@@ -4,16 +4,18 @@ Simple data science exercise demonstrating the use of these features\+:
 \begin{DoxyItemize}
 \item reading, writing, and parsing data
 \item header+source files
-\item O\+OP\+: inheritance
+\item O\+OP\+: inheritance, virtual methods
 \item pointers, references
 \item S\+TL, Boost
 \item passing by reference/by value
 \item dynamic memory allocation
-\item C++11, C++14
+\item C++11, C++14 features
 \item templates
 \item python like string formatting
 \item documentation
 \item testing
+\item C\+LI arguments
+\item make
 \end{DoxyItemize}
 
 \# Setup 
@@ -36,11 +38,23 @@ Simple data science exercise demonstrating the use of these features\+:
 16 cd astyle/build/gcc
 17 make
 18 
-19 # make run.sh executable
-20 chmod +x run.sh
+19 # install code correctness recommender
+20 sudo pip install --upgrade cppclean
 21 
-22 # run
-23 ./run.sh
+22 # install google test
+23 sudo apt-get install libgtest-dev
+24 sudo apt-get install cmake # install cmake
+25 cd /usr/src/gtest
+26 sudo cmake CMakeLists.txt
+27 sudo make
+28 # copy or symlink libgtest.a and libgtest\_main.a to your /usr/lib folder
+29 sudo cp *.a /usr/lib
+30 
+31 # make run.sh executable
+32 chmod +x run.sh
+33 
+34 # run
+35 ./run.sh
 \end{DoxyCode}
 
 
@@ -52,5 +66,6 @@ Simple data science exercise demonstrating the use of these features\+:
 \item better optimization
 \item add tests
 \item more comments
-\item use typedefs 
+\item use typedefs
+\item use initializers whenever you can 
 \end{DoxyItemize}
