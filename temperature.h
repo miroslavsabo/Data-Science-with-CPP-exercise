@@ -18,11 +18,11 @@ protected:
     std::string filename;
     std::vector<Record> records;
 public:
-    Data(std::string f) : filename(f) { }
+    Data(std::string);
 
     void print();
     virtual void read() = 0;
-    virtual void save(std::string filename, std::string sep = ";") = 0;
+    virtual void save(std::string, std::string sep = ";") = 0;
 
     virtual ~Data() {};
 };
@@ -34,7 +34,7 @@ public:
 
     void read();
     records_by_station to_map();
-    void save(std::string filename, std::string sep = ";");
+    void save(std::string, std::string sep = ";");
 
     ~TemperatureData() {};
 };

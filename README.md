@@ -1,10 +1,9 @@
 # Data Science with C++ exercise
-
-Simple data science exercise demonstrating the use of these features:
+Simple data science exercise  demonstrating the use of these features:
 
 * reading, writing, and parsing data
 * header+source files
-* OOP: inheritance, virtual methods
+* OOP: inheritance, virtual methods, abstract base class, constructor+destructor
 * data structures: struct, class, unordered map, vector
 * pointers, references
 * STL, Boost
@@ -25,6 +24,7 @@ Simple data science exercise demonstrating the use of these features:
 * regex
 * plotting
 * external library
+* declaration vs definition
 
 # Setup
 ```
@@ -75,3 +75,4 @@ chmod +x run.sh
 * better project structure
 * make plot
 * add external library
+* improve declarations and definitions

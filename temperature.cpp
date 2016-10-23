@@ -9,6 +9,8 @@
 #include <typeinfo>
 #include "utils.h"
 
+Data::Data(std::string f) : filename(f) { }
+
 void Data::print()
 {
     std::cout << "Object of class " << typeid(*this).name() << " with " << records.size() << " records." << std::endl;

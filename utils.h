@@ -8,9 +8,9 @@
 #define KRED  "\x1B[31m"
 #define FRED(x) KRED x RST
 
-double avg(const std::vector<double> &v);
+double avg(const std::vector<double>&);
 
-bool is_number(const std::string & s);
+bool is_number(const std::string&);
 
 /**
  * @brief Example showing how to document a function with Doxygen.
@@ -45,5 +45,5 @@ bool is_number(const std::string & s);
  * @note Something to note.
  * @warning Warning.
  */
-void summarise_by_key(const std::unordered_map<std::string, std::vector<double>> &m,
-                      std::function<double (std::vector<double>)> agg);
+void summarise_by_key(const std::unordered_map<std::string, std::vector<double>>&,
+                      std::function<double (std::vector<double>)>);
