@@ -19,5 +19,5 @@ doxygen parsing-exercise.conf
 # execute
 ./parser
 
-# recommend
+# recommend improvements
 cppclean .

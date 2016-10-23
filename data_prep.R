@@ -1,18 +1,17 @@
 setwd("~/Documents/TOP/MY CPP PACKAGES/parsing-exercise/")
 
-library(magrittr)
-
 n <- 10
 
-temperature <- rnorm(n) %>% as.character 
+temperature <- as.character(rnorm(n)) 
 
 set.seed(1234)
-station <- c("aaaaaaa", "b", "c") %>% sample(n, replace = TRUE) 
+station <- sample(c("aaaaaaa", "b", "c"), n, replace = TRUE) 
 
-c("efef", "", "er;;;;") %>% 
-  c(paste(station, temperature, sep = ";")) %>% 
-  c("efrfr;fr;rfrgfr;gr", "", "a", "-0.1;a") %>% 
-  writeLines("data/stations.csv")
+data <- c(
+  c("efef", "", "er;;;;"),
+  c(paste(station, temperature, sep = ";")),
+  c("efrfr;fr;rfrgfr;gr", "", "a", "-0.1;a")
+  )
 
-
-
+writeLines(data, "data/stations.csv")
+  

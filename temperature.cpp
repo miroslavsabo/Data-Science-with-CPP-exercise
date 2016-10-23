@@ -56,7 +56,7 @@ void TemperatureData::read()
         else
         {
             //std::cout << "\tERROR: " << line << std::endl ;
-            std::cout << FRED("\tBAD LINE") << " ("<< bad+good+1 << "): " << line << std::endl;
+            std::cout << FRED("BAD LINE") << " ("<< bad+good+1 << "): " << line << std::endl;
             bad++;
         }
 
