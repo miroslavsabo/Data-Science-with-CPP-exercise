@@ -69,8 +69,9 @@ void TemperatureData::read()
 
     }
 
-std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-double duration = std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count();
+    std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+    double duration = std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count() / 1e9;
+
     std::cout << boost::format("Read: %s lines  Skipped: %s lines In: %f seconds") % good % bad % duration << std::endl;
 
 }

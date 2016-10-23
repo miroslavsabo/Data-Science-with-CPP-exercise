@@ -5,26 +5,27 @@ Simple data science exercise  demonstrating the use of these features:
 * header+source files
 * OOP: inheritance, virtual methods, abstract base class, constructor+destructor
 * data structures: struct, class, unordered map, vector
-* pointers, references
+* pointers, references (TODO)
 * STL, Boost
 * passing by reference/by value
-* dynamic memory allocation
+* dynamic memory allocation (TODO)
 * C++11, C++14 features
-* templates
+* templates (TODO)
 * python like string formatting (with Boost Format)
 * printing in color
 * documentation
 * testing (with Google Test)
-* CLI arguments
-* make
+* CLI arguments (TODO)
+* make (TODO)
 * include guards (via #pragma once)
 * macros
-* namespaces
-* exceptions
+* namespaces (TODO)
+* exceptions (TODO)
 * regex
-* plotting
-* external library
+* plotting (TODO)
+* external library (TODO)
 * declaration vs definition
+* measing elapsed time
 
 # Setup
 ```
