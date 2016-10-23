@@ -1,6 +1,12 @@
+#pragma once
+
 #include <unordered_map>
 #include <vector>
 #include <functional>
+
+#define RST  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define FRED(x) KRED x RST
 
 double avg(const std::vector<double> &v);
 

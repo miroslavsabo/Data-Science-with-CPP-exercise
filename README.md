@@ -10,11 +10,14 @@ Simple data science exercise demonstrating the use of these features:
 * dynamic memory allocation
 * C++11, C++14 features
 * templates
-* python like string formatting
+* python like string formatting (with Boost Format)
+* printing in color
 * documentation
-* testing
+* testing (with Google Test)
 * CLI arguments
 * make
+* include guards (via #pragma once)
+* macros
 
 # Setup
 ```
@@ -62,3 +65,5 @@ chmod +x run.sh
 * more comments
 * use typedefs
 * use initializers whenever you can
+* better project structure
+* check that station is string and temperature is number

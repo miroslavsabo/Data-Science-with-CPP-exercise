@@ -33,7 +33,7 @@ void summarise_by_key(const std::unordered_map<std::string, std::vector<double>>
         double t_avg = agg(temperatures);
 
 
-        std::cout << boost::format("Station: %-10s  AVG: %10.2f") % station % t_avg << std::endl;
+        std::cout << boost::format("Station: %-10s  AVG: %.2f") % station % t_avg << std::endl;
 
     }
 }

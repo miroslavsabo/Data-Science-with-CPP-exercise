@@ -5,11 +5,13 @@
 #include <string>
 #include <algorithm>
 #include <unordered_map>
-#include "boost/format.hpp"
+#include <boost/format.hpp>
+#include <typeinfo>
+#include "utils.h"
 
 void Data::print()
 {
-    std::cout << "Temperature data object of " << records.size() << " records." << std::endl;
+    std::cout << "Object of class " << typeid(*this).name() << " with " << records.size() << " records." << std::endl;
 }
 
 void TemperatureData::save(std::string filename, std::string sep)
@@ -53,7 +55,8 @@ void TemperatureData::read()
 
         else
         {
-            std::cout << "\tWrong line found: " << line << std::endl ;
+            //std::cout << "\tERROR: " << line << std::endl ;
+            std::cout << FRED("\tBAD LINE") << " ("<< bad+good+1 << "): " << line << std::endl;
             bad++;
         }
 
@@ -61,7 +64,7 @@ void TemperatureData::read()
 
     }
 
-    std::cout << boost::format("Read: %-10s  Skipped: %10.2f") % good % bad << std::endl;
+    std::cout << boost::format("Read: %s lines  Skipped: %s lines") % good % bad << std::endl;
 
 }
 

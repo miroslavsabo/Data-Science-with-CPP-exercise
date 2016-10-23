@@ -77,3 +77,7 @@ vignettes/*.pdf
 #
 CMakeFiles/
 *.cmake
+CMakeCache.txt
+
+parser
+runTests
