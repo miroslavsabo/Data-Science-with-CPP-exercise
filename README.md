@@ -1,4 +1,5 @@
-# Parsing exercise
+# Data Science with C++ exercise
+
 Simple data science exercise demonstrating the use of these features:
 
 * reading, writing, and parsing data
