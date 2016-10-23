@@ -23,8 +23,6 @@ void TemperatureData::save(std::string filename, std::string sep)
     myfile.open (filename);
     for(auto value : records) myfile << value.station << sep << value.temperature << std::endl;
     myfile.close();
-
-
 }
 
 void TemperatureData::read()
@@ -60,7 +58,6 @@ void TemperatureData::read()
 
         else
         {
-            //std::cout << "\tERROR: " << line << std::endl ;
             std::cout << FRED("BAD LINE") << " ("<< bad+good+1 << "): " << line << std::endl;
             bad++;
         }

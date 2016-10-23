@@ -76,4 +76,4 @@ chmod +x run.sh
 * better project structure
 * make plot
 * add external library
-* improve declarations and definitions
+* write blog post

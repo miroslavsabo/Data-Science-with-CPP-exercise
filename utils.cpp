@@ -18,16 +18,9 @@ bool is_number(const std::string & s)
     return std::regex_match(s, std::regex("-?[0-9]+([.][0-9]+)?"));
 }
 
-/** brief
- *
- * param accList list<AccountPtr>&
- * return void
- *
- */
 void summarise_by_key(const std::unordered_map<std::string, std::vector<double>> &m,
                       std::function<double (std::vector<double>)> agg)
 {
-
     std::stringstream ss;
 
     for (auto const& x : m)
@@ -35,9 +28,7 @@ void summarise_by_key(const std::unordered_map<std::string, std::vector<double>>
         std::string station = x.first;
         std::vector<double> temperatures = x.second;
 
-        //typedef std::function<double (std::vector<T>)> Funcp = agg<std::vector<T>>;
         double t_avg = agg(temperatures);
-
 
         std::cout << boost::format("Station: %-10s  AVG: %.2f") % station % t_avg << std::endl;
 

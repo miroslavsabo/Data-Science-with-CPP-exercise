@@ -15,11 +15,7 @@ TEST(is_numberTest, correctness)
 
     for (auto x : numbers) ASSERT_EQ(1, is_number(x));
     for (auto x : notnumbers) ASSERT_EQ(0, is_number(x));
-
 }
-
-
-
 
 
 int main(int argc, char **argv)
