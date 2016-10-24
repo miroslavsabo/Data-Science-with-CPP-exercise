@@ -26,6 +26,7 @@ Simple data science exercise  demonstrating the use of these features:
 * external library (TODO)
 * declaration vs definition
 * measing elapsed time
+* profiling
 
 # Setup
 ```

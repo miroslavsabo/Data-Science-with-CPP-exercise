@@ -27,6 +27,7 @@ Simple data science exercise demonstrating the use of these features\+:
 \item external library (T\+O\+DO)
 \item declaration vs definition
 \item measing elapsed time
+\item profiling
 \end{DoxyItemize}
 
 \# Setup 
@@ -49,23 +50,28 @@ Simple data science exercise demonstrating the use of these features\+:
 16 cd astyle/build/gcc
 17 make
 18 
-19 # install code correctness recommender
-20 sudo pip install --upgrade cppclean
-21 
-22 # install google test
-23 sudo apt-get install libgtest-dev
-24 sudo apt-get install cmake # install cmake
-25 cd /usr/src/gtest
-26 sudo cmake CMakeLists.txt
-27 sudo make
-28 # copy or symlink libgtest.a and libgtest\_main.a to your /usr/lib folder
-29 sudo cp *.a /usr/lib
-30 
-31 # make run.sh executable
-32 chmod +x run.sh
-33 
-34 # run
-35 ./run.sh
+19 # install valgrind for measuring performance
+20 sudo apt-get install libc6-dbg gdb valgrind
+21 sudo apt-get install python graphviz
+22 sudo pip install gprof2dot
+23 
+24 # install code correctness recommender
+25 sudo pip install --upgrade cppclean
+26 
+27 # install google test
+28 sudo apt-get install libgtest-dev
+29 sudo apt-get install cmake # install cmake
+30 cd /usr/src/gtest
+31 sudo cmake CMakeLists.txt
+32 sudo make
+33 # copy or symlink libgtest.a and libgtest\_main.a to your /usr/lib folder
+34 sudo cp *.a /usr/lib
+35 
+36 # make run.sh executable
+37 chmod +x run.sh
+38 
+39 # run
+40 ./run.sh
 \end{DoxyCode}
 
 

@@ -19,10 +19,10 @@ void Data::print() const
 
 void TemperatureData::save(std::string filename, std::string sep) const
 {
-    std::ofstream myfile;
-    myfile.open (filename);
+    std::ofstream myfile(filename);
+    //myfile.open (filename);
     for(auto value : records) myfile << value.station << sep << value.temperature << std::endl;
-    myfile.close();
+    //myfile.close();
 }
 
 void TemperatureData::read()
