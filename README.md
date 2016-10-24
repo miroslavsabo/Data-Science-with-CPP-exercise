@@ -77,3 +77,4 @@ chmod +x run.sh
 * make plot
 * add external library
 * write blog post
+* improve Boost formatting

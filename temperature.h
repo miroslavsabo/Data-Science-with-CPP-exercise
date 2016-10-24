@@ -20,9 +20,9 @@ protected:
 public:
     Data(std::string);
 
-    void print();
+    void print() const;
     virtual void read() = 0;
-    virtual void save(std::string, std::string sep = ";") = 0;
+    virtual void save(std::string, std::string sep = ";") const = 0;
 
     virtual ~Data() {};
 };
@@ -33,8 +33,8 @@ public:
     using Data::Data;
 
     void read();
-    records_by_station to_map();
-    void save(std::string, std::string sep = ";");
+    records_by_station to_map() const;
+    void save(std::string, std::string sep = ";") const;
 
     ~TemperatureData() {};
 };

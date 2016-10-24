@@ -12,12 +12,12 @@
 
 Data::Data(std::string f) : filename(f) { }
 
-void Data::print()
+void Data::print() const
 {
     std::cout << "Object of class " << typeid(*this).name() << " with " << records.size() << " records." << std::endl;
 }
 
-void TemperatureData::save(std::string filename, std::string sep)
+void TemperatureData::save(std::string filename, std::string sep) const
 {
     std::ofstream myfile;
     myfile.open (filename);
@@ -73,7 +73,7 @@ void TemperatureData::read()
 
 }
 
-records_by_station TemperatureData::to_map()
+records_by_station TemperatureData::to_map() const
 {
     records_by_station m;
 
