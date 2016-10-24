@@ -1,13 +1,15 @@
 #include "temperature.h"
+#include "utils.h"
+
 #include <boost/algorithm/string.hpp>
+#include <boost/format.hpp>
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <algorithm>
 #include <unordered_map>
-#include <boost/format.hpp>
 #include <typeinfo>
-#include "utils.h"
 #include <chrono>
 
 Data::Data(std::string f) : filename(f) { }

@@ -1,7 +1,9 @@
 #include "utils.h"
+
+#include <boost/format.hpp>
+
 #include <iostream>
 #include <numeric>
-#include <boost/format.hpp>
 #include <unordered_map>
 #include <vector>
 #include <sstream>
