@@ -75,12 +75,9 @@ chmod +x run.sh
 # TODO
 * better naming
 * better optimization
-* add tests
 * more comments
-* use typedefs
 * use initializers whenever you can
 * better project structure
-* make plot
-* add external library
 * write blog post
 * improve Boost formatting
+* missing values

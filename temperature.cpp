@@ -22,9 +22,7 @@ void Data::print() const
 void TemperatureData::save(std::string filename, std::string sep) const
 {
     std::ofstream myfile(filename);
-    //myfile.open (filename);
     for(auto value : records) myfile << value.station << sep << value.temperature << std::endl;
-    //myfile.close();
 }
 
 void TemperatureData::read()
@@ -79,10 +77,7 @@ records_by_station TemperatureData::to_map() const
 {
     records_by_station m;
 
-    for(auto value : records)
-    {
-        m[value.station].push_back(value.temperature);
-    }
+    for(auto value : records) m[value.station].push_back(value.temperature);
 
     std::cout << m.size() << " stations." << std::endl;
 

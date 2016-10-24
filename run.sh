@@ -6,7 +6,8 @@ set -e
 ~/Downloads/astyle/build/gcc/bin/astyle --suffix=none --style=allman --recursive  './*.cpp'  './*.h'
 
 # compile
-g++ -std=c++14 main.cpp  temperature.cpp utils.cpp -o parser
+# -Wunused (GCC, Clang) should warn about unused variables
+g++ -std=c++14 -Wunused main.cpp  temperature.cpp utils.cpp -o parser
 
 # test
 cmake CMakeLists.txt
