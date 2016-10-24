@@ -21,3 +21,7 @@ doxygen parsing-exercise.conf
 
 # recommend improvements
 cppclean .
+
+# measure performance
+#valgrind --tool=callgrind ./parser
+#gprof2dot -f callgrind callgrind.out.* | dot -Tsvg -o output.svg

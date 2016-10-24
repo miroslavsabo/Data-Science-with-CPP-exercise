@@ -3,7 +3,7 @@ Simple data science exercise  demonstrating the use of these features:
 
 * reading, writing, and parsing data
 * header+source files
-* OOP: inheritance, virtual methods, abstract base class, constructor+destructor
+* OOP: inheritance, virtual methods, abstract base class, constructor+destructor, static variable+method (TODO), polymorphism (TODO)
 * data structures: struct, class, unordered map, vector
 * pointers, references (TODO)
 * STL, Boost
@@ -21,7 +21,7 @@ Simple data science exercise  demonstrating the use of these features:
 * macros
 * namespaces (TODO)
 * exceptions (TODO)
-* regex
+* regexes
 * plotting (TODO)
 * external library (TODO)
 * declaration vs definition
@@ -46,6 +46,11 @@ doxygen -g parsing-exercise.conf
 download https://sourceforge.net/projects/astyle/files/latest/download?source=files
 cd astyle/build/gcc
 make
+
+# install valgrind for measuring performance
+sudo apt-get install libc6-dbg gdb valgrind
+sudo apt-get install python graphviz
+sudo pip install gprof2dot
 
 # install code correctness recommender
 sudo pip install --upgrade cppclean

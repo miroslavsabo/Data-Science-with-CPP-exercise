@@ -4,8 +4,7 @@
 
 TEST(avgTest, correctness)
 {
-    std::vector<double> v{1.0, 2.0, 3.0};
-    ASSERT_EQ(2, avg(v));
+    ASSERT_EQ(2, avg({1.0, 2.0, 3.0}));
 }
 
 TEST(is_numberTest, correctness)
