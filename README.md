@@ -9,7 +9,7 @@ Simple data science exercise  demonstrating the use of these features:
 * STL, Boost
 * passing by reference/by value
 * dynamic memory allocation (TODO)
-* C++11, C++14 features
+* C++11, C++14 features: auto, alias
 * templates (TODO)
 * python like string formatting (with Boost Format)
 * printing in color

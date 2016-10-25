@@ -4,7 +4,7 @@
 #include <vector>
 #include <unordered_map>
 
-typedef std::unordered_map<std::string, std::vector<double>> records_by_station;
+using records_by_station = std::unordered_map<std::string, std::vector<double>>;
 
 struct Record
 {
