@@ -8,6 +8,8 @@
 #define KRED  "\x1B[31m"
 #define FRED(x) KRED x RST
 
+namespace utils
+{
 double avg(const std::vector<double>&);
 
 bool is_number(const std::string&);
@@ -47,3 +49,4 @@ bool is_number(const std::string&);
  */
 void summarise_by_key(const std::unordered_map<std::string, std::vector<double>>&,
                       std::function<double (std::vector<double>)>);
+}

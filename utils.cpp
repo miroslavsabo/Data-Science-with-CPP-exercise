@@ -10,6 +10,9 @@
 #include <functional>
 #include <regex>
 
+namespace utils
+{
+
 double avg(const std::vector<double> &v)
 {
     return std::accumulate(v.begin(), v.end(), 0.0) / v.size();
@@ -35,4 +38,5 @@ void summarise_by_key(const std::unordered_map<std::string, std::vector<double>>
         std::cout << boost::format("Station: %-10s  AVG: %.2f") % station % t_avg << std::endl;
 
     }
+}
 }

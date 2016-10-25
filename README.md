@@ -19,7 +19,7 @@ Simple data science exercise  demonstrating the use of these features:
 * make (TODO)
 * include guards (via #pragma once)
 * macros
-* namespaces (TODO)
+* namespaces
 * exceptions (TODO)
 * regexes
 * plotting (TODO)

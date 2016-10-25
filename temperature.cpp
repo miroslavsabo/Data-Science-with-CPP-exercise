@@ -44,7 +44,7 @@ void TemperatureData::read()
         std::vector<std::string> fields;
         boost::split(fields, line, boost::is_any_of(";"));
 
-        if (n_seps == 1 && is_number(fields.at(1)))
+        if (n_seps == 1 && utils::is_number(fields.at(1)))
         {
             std::string station = fields.at(0);
             double temperature = std::stod(fields.at(1));

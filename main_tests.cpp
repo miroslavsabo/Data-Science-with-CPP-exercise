@@ -4,7 +4,7 @@
 
 TEST(avgTest, correctness)
 {
-    ASSERT_EQ(2, avg({1.0, 2.0, 3.0}));
+    ASSERT_EQ(2, utils::avg({1.0, 2.0, 3.0}));
 }
 
 TEST(is_numberTest, correctness)
@@ -12,8 +12,8 @@ TEST(is_numberTest, correctness)
     std::vector<std::string> numbers{"5", "-5", "52.1", "-0.5"};
     std::vector<std::string> notnumbers{"a58", ""};
 
-    for (auto x : numbers) ASSERT_EQ(1, is_number(x));
-    for (auto x : notnumbers) ASSERT_EQ(0, is_number(x));
+    for (auto x : numbers) ASSERT_EQ(1, utils::is_number(x));
+    for (auto x : notnumbers) ASSERT_EQ(0, utils::is_number(x));
 }
 
 

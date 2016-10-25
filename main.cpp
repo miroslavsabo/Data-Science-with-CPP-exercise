@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
     t.print();
 
     //calculate avg temperature by station
-    summarise_by_key(t.to_map(), avg);
+    utils::summarise_by_key(t.to_map(), utils::avg);
 
     //save clean data to disk
     t.save("results/stations-clean.csv");
