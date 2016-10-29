@@ -3,7 +3,7 @@ Simple data science exercise  demonstrating the use of these features:
 
 * reading, writing, and parsing data
 * header+source files
-* OOP: inheritance, virtual methods, abstract base class, constructor+destructor, static variable+method (TODO), polymorphism (TODO)
+* OOP: inheritance, virtual methods, abstract base class, constructor+destructor, static variable+method (TODO), polymorphism (TODO), nested class (TODO)
 * data structures: struct, class, unordered map, vector
 * pointers, references (TODO)
 * STL, Boost
